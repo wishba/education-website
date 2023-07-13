@@ -7,8 +7,6 @@ pathname = pathname
   .replace(/\b\w/g, match => match.toUpperCase());
 document.title = pathname
 
-let locationPath = window.location.pathname
-
 window.addEventListener('load', () => {
-  localStorage.setItem(document.title, locationPath)
+  localStorage.setItem(document.title, window.location.pathname)
 })
