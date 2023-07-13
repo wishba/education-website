@@ -1,18 +1,14 @@
-// let pathname = location.pathname;
+let pathname = location.pathname;
+pathname = pathname
+  .replace(/^\//, '')
+  .replace(/articles|\.html/g, '')
+  .replace(/^\//, '')
+  .replace(/-/g, ' ')
+  .replace(/\b\w/g, match => match.toUpperCase());
+document.title = pathname
 
-// pathname = pathname
-//   .replace(/^\//, '')
-//   .replace(/articles|\.html/g, '')
-//   .replace(/^\//, '')
-//   .replace(/-/g, ' ')
-//   .replace(/\b\w/g, match => match.toUpperCase());
-
-// document.title = pathname;
-document.URL = location.href;
-let loc = location.href;
-loc = loc.split('/');
-console.log(loc[loc.length - 1].replace(/-/g, ' ').replace(/\.html/g, ''));
+let locationPath = window.location.pathname
 
 window.addEventListener('load', () => {
-  localStorage.setItem('title', document.URL);
-});
+  localStorage.setItem(document.title, locationPath)
+})
