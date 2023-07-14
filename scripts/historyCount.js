@@ -1,0 +1,1 @@
+document.getElementById('historyCount').innerText = localStorage.length
