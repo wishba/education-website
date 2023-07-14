@@ -4,7 +4,7 @@ document.querySelector('header').innerHTML = `
       <a href="/index.html">Home</a>
     </li>
     <li>
-      <a href="/profile.html">Profile</a>
+      <a href="/reading-progress.html">Reading Progress</a>
     </li>
   </ul>
   <hr>
