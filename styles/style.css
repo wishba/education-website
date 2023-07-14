@@ -1,6 +1,38 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .nav {
   padding: 0;
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+
+.article__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article__list li {
+  width: fit-content;
+  border: .1rem solid black;
+  border-radius: .25rem;
+  margin: .5rem;
+}
+
+.article__list a>* {
+  display: block;
+}
+
+
+.article__list a>img {
+  width: 10rem;
+}
+
+.article__list a>span {
+  text-align: center;
 }
