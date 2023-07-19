@@ -19,12 +19,12 @@ a {
 
 .article__list li {
   width: fit-content;
-  border: .1rem solid black;
-  border-radius: .25rem;
-  margin: .5rem;
+  border: 0.1rem solid black;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
 }
 
-.article__list a>* {
+/* .article__list a>* {
   display: block;
 }
 
@@ -35,4 +35,4 @@ a {
 
 .article__list a>span {
   text-align: center;
-}
+} */
