@@ -3,6 +3,15 @@ a {
   color: black;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.article-container {
+  display: flex;
+}
+
 .nav {
   padding: 0;
   list-style: none;

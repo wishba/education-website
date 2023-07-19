@@ -11,15 +11,15 @@ for (let i in data) {
 
 arr.forEach(e => {
   const content = `
-        <div class="article-container">
+        <div class="list-container">
             <a href="../articles/${e[1].pageName}.html">
             <img
                 src="../image-content/${e[1].image}"
                 alt="${e[1].pageName}"
-                class="article-images"
+                class="list-images"
             />
-            <div class="article-text">
-                <p class="article-link">${e[1].pageName}</p>
+            <div class="list-text">
+                <p class="list-link">${e[1].pageName}</p>
             </div>
             </a>
         </div>`;

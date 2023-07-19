@@ -1,4 +1,5 @@
-const firstElement = document.body.firstElementChild;
+const container = document.querySelector('.container');
+const firstElement = container.firstElementChild;
 const header = document.createElement('header');
 const head = `
   <ul class='nav'>
@@ -13,4 +14,4 @@ const head = `
 `;
 
 header.innerHTML = head;
-document.body.insertBefore(header, firstElement);
+container.insertBefore(header, firstElement);
