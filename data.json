@@ -6,5 +6,9 @@
   { 
     "pageName": "test-article", 
     "image": "test-article.jpg"
+  },
+  { 
+    "pageName": "section-article", 
+    "image": "section-article.jpg"
   }
 ]
