@@ -1,5 +1,4 @@
 import data from '../data.json' assert { type: 'json' };
-console.log(data);
 
 const ul = document.querySelector('.article__list');
 

@@ -5,8 +5,13 @@ pathname = pathname
   .replace(/^\//, '')
   .replace(/-/g, ' ')
   .replace(/\b\w/g, match => match.toUpperCase());
-document.title = pathname
+document.title = pathname;
+
+const tempObj = {
+  title: document.title,
+  path: window.location.pathname,
+};
 
 window.addEventListener('load', () => {
-  localStorage.setItem(document.title, window.location.pathname)
-})
+  localStorage.setItem(document.title, window.location.pathname);
+});

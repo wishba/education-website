@@ -3,12 +3,16 @@
     "pageName": "html-semantic",
     "image": "html-semantic.jpg"
   },
-  { 
-    "pageName": "test-article", 
-    "image": "test-article.jpg"
+  {
+    "pageName": "section-article",
+    "image": "section-article.jpg"
   },
-  { 
-    "pageName": "section-article", 
+  {
+    "pageName": "section-article",
+    "image": "section-article.jpg"
+  },
+  {
+    "pageName": "section-article",
     "image": "section-article.jpg"
   }
 ]
