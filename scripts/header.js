@@ -2,10 +2,10 @@ const container = document.querySelector('.container');
 const firstElement = container.firstElementChild;
 const header = document.createElement('header');
 const head = `
-  <h1>Education Website</h1>
+  <h1>📖Education Website</h1>
   <nav class="nav">
-    <a href="../index.html">Home</a>
-    <a href="../reading-progress.html">Reading Progress</a>
+    <a href="../index.html" class="nav-content">Home</a>
+    <a href="../reading-progress.html" class="nav-content">Reading Progress</a>
   </nav>
 `;
 header.classList.add('header');

@@ -31,22 +31,32 @@ body {
   padding: 10px 20px;
 }
 
+.header h1 {
+  text-transform: uppercase;
+  color: rgb(18, 156, 190);
+}
+
 .nav {
   padding: 0;
 }
 
-.nav a:link {
+.nav-content {
   text-decoration: none;
+  font-size: 20px;
   height: auto;
   margin-right: 10px;
-  color: #1098ad;
+  color: #2159c0;
 }
 
-.nav a:link:visited {
-  color: pink;
+.nav-content:visited {
+  color: #2159c0;
 }
 
-.nav a:link:last-child {
+.nav-content:hover {
+  color: #0f5ef1;
+}
+
+.nav-content:last-child {
   margin-right: 0;
 }
 
