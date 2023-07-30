@@ -18,7 +18,7 @@ arr.forEach(e => {
                 class="list-images"
             />
             <div class="list-text">
-                <p class="list-link">${e[1].pageName}</p>
+                <p class="list-link">${e[1].pageName.split('-').join(' ')}</p>
             </div>
             </a>
         </div>`;

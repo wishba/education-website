@@ -6,5 +6,13 @@
   {
     "pageName": "section-article",
     "image": "section-article.jpg"
+  },
+  {
+    "pageName": "css-facts",
+    "image": "section-article.jpg"
+  },
+  {
+    "pageName": "css-box-model",
+    "image": "section-article.jpg"
   }
 ]
