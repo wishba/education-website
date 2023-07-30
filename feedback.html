@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  <script src="/scripts/header.js" defer></script>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/feedback.css">
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <form class="form__feedback" name="contact" method="POST" data-netlify="true">
+        <label>Apakah anda puas dengan artikel-artikel yang telah dibaca?
+          <label>
+            <input type="radio" name="satisfaction" value="Kurang Puas">
+            Kurang Puas
+          </label>
+          <label>
+            <input type="radio" name="satisfaction" value="Puas">
+            Puas
+          </label>
+          <label>
+            <input type="radio" name="satisfaction" value="Sangat Puas">
+            Sangat Puas
+          </label>
+        </label>
+
+        <label>
+          Ceritakan isi atau topik yang ingin Anda temukan dalam artikel-artikel kami
+          <textarea name="suggestions"></textarea>
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+
+    </main>
+  </div>
+</body>
+
+</html>
