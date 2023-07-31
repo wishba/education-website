@@ -1,5 +1,6 @@
 .article__list {
   padding: 0;
+  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
