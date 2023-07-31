@@ -6,7 +6,6 @@ const head = `
   <nav class="nav">
     <a href="../index.html" class="nav-content">Home</a>
     <a href="../reading-progress.html" class="nav-content">Reading Progress</a>
-    <a href="../feedback.html" class="nav-content">Feedback</a>
   </nav>
 `;
 header.classList.add('header');
