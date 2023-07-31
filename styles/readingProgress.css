@@ -1,0 +1,13 @@
+.history__riwayat {
+  margin-left: 1rem;
+}
+
+.form__feedback>*,
+.form__feedback textarea {
+  display: block;
+  margin: 0 0 1rem 1rem;
+}
+
+.form__feedback textarea {
+  margin: 0 0 1rem 0;
+}
