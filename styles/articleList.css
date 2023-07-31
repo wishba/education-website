@@ -1,0 +1,23 @@
+.article__list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article__list li {
+  list-style: none;
+  width: 15rem;
+  border: .1rem solid black;
+  text-align: center;
+}
+
+.article__list a {
+  text-decoration: none;
+  color: black;
+}
+
+.article__list img {
+  height: 10rem;
+  width: auto;
+}
