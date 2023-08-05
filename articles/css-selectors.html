@@ -16,7 +16,7 @@
           <h2 class="article__title">CSS: Selectors</h2>
           <div class="author-box">
             <p class="author">
-              Posted by <strong>Hafizh Khalis</strong> - 30 Juli 2023
+              Posted by <strong>Hafizh Khalis</strong> - 05 Agustus 2023
             </p>
             <img
               class="img-content"
@@ -26,7 +26,275 @@
           </div>
         </header>
 
-        <section></section>
+        <section>
+          <p>
+            Sebelumnya kita sudah mempelajari apa itu css, dan bagaimana
+            mekanisme kerja css. Pada artikel ini, kita akan mempelajari
+            selektor apa saja yang dapat digunakan untuk membuat style pada
+            element html.
+          </p>
+          <p>
+            Selektor sendiri merupakan kunci atau simbol yang dapat digunakan
+            pada css untuk menyeleksi dan memilih element HTML.
+          </p>
+          <p>Ada 5 macam selektor dasar pada css yaitu:</p>
+          <ul style="list-style: square">
+            <li>Selektor Tag</li>
+            <li>Selektor Class</li>
+            <li>Selektor ID</li>
+            <li>Selektor Atribut</li>
+            <li>Selektor Universal</li>
+          </ul>
+        </section>
+        <section>
+          <h2>1. Selektor Tag</h2>
+          <p>
+            Selektor tag merupakan selektor yang menggunakan tag element html
+            seperti body, p, h1,span untuk menyeleksi sebuah element yang akan
+            diberikan css property, contoh penggunaannya:
+          </p>
+          <p
+            class="codepen"
+            data-height="300"
+            data-default-tab="css,result"
+            data-slug-hash="dyQrmEv"
+            data-user="hafizhkhalis"
+            style="
+              height: 300px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/hafizhkhalis/pen/dyQrmEv">
+                Tag Selector</a
+              >
+              by Hakhajid (<a href="https://codepen.io/hafizhkhalis"
+                >@hafizhkhalis</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+        </section>
+        <section>
+          <h2>2. Selektor Class</h2>
+          <p>
+            Class merupakan selektor yang dibuat sesuai kebutuhan, dapat
+            dikatakan class merupakan selektor yang penamannya bisa dibuat oleh
+            developer, jadi setiap tag dapat disesuaikan kebutuhan berdasarkan
+            class yang diseleksi
+          </p>
+          <p>
+            Untuk menggunakan class selektor, perlu menambahkan atribut class
+            pada tag yang ingin diberikan class, lalu value dapat diisi dengan
+            nama tag. Contoh penggunannya seperti berikut:
+          </p>
+          <p
+            class="codepen"
+            data-height="152"
+            data-default-tab="html,result"
+            data-slug-hash="PoxLRrR"
+            data-user="hafizhkhalis"
+            style="
+              height: 152px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/hafizhkhalis/pen/PoxLRrR">
+                Class Selectors</a
+              >
+              by Hakhajid (<a href="https://codepen.io/hafizhkhalis"
+                >@hafizhkhalis</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+          <p>
+            Lalu pada cssnya dapat diberikan tanda titik (.) diawal untuk
+            menandakan bahwa element yang kita seleksi menggunakan class.
+          </p>
+        </section>
+        <section>
+          <h2>3. Selektor ID</h2>
+          <p>
+            ID merupakan selektor yang hampir sama cara penggunaannya dengan
+            class selektor, perbedaannya ada pada tingkat prioritas dan jumlah
+            element yang dapat diberikan id. Berbeda dengan class yang dapat
+            digunakan pada banyak element, id hanya dapat digunakan pada satu
+            element saja, sehingga hal tersebut lah yang membuat ID jarang
+            digunakan atau dihindari penggunannya karena tidak reusable.
+          </p>
+          <p>Berikut contoh penggunaan selektor ID:</p>
+          <p
+            class="codepen"
+            data-height="137.60000610351562"
+            data-default-tab="html,result"
+            data-slug-hash="MWzxVNN"
+            data-user="hafizhkhalis"
+            style="
+              height: 137.60000610351562px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/hafizhkhalis/pen/MWzxVNN">
+                ID Selectors</a
+              >
+              by Hakhajid (<a href="https://codepen.io/hafizhkhalis"
+                >@hafizhkhalis</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+          <p>ID menggunakan Pagar (#) untuk memanggil element.</p>
+        </section>
+        <section>
+          <h2>4. Selektor Atribut</h2>
+          <p>
+            Selektor atribut merupakan selektor yang biasa digunakan untuk
+            menyeleksi sebuah tag yang memiliki atribut tertentu, biasanya
+            selektor atribut digunakan untuk menyeleksi input user untuk
+            diberikan style. Contoh penggunannya:
+          </p>
+          <p
+            class="codepen"
+            data-height="153.59994506835938"
+            data-default-tab="html,result"
+            data-slug-hash="oNQVdbw"
+            data-user="hafizhkhalis"
+            style="
+              height: 153.59994506835938px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/hafizhkhalis/pen/oNQVdbw">
+                Attribute Selector</a
+              >
+              by Hakhajid (<a href="https://codepen.io/hafizhkhalis"
+                >@hafizhkhalis</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+          <p>
+            Untuk menggunakan selektor atribut dapat dengan menggunakan
+            tag[atribut="value"].
+          </p>
+        </section>
+        <section>
+          <h2>5. Selektor Universal</h2>
+          <p>
+            Selektor universal merupakan selektor yang dapat menyeleksi semua
+            tag pada html, biasanya tag ini digunakan untuk melakukan reset
+            margin dan padding pada setiap element html sehingga kita dapat
+            menentukan padding dan margin secara manual. Cara penggunaanya:
+          </p>
+          <p
+            class="codepen"
+            data-height="203.19998168945312"
+            data-default-tab="css"
+            data-slug-hash="OJaqZXo"
+            data-user="hafizhkhalis"
+            style="
+              height: 203.19998168945312px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/hafizhkhalis/pen/OJaqZXo">
+                Universal Selector</a
+              >
+              by Hakhajid (<a href="https://codepen.io/hafizhkhalis"
+                >@hafizhkhalis</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+          <p>
+            Universal selector digunakan dengan menggunakan tanda bintang (*)
+            pada css.
+          </p>
+        </section>
+        <section>
+          <h2>Penutup</h2>
+          <p>
+            Berikut penjelasan terkait selektor yang ada pada css, sebenarnya
+            masih ada pseudo selector tetapi perlu pemahaman yang cukup baik
+            terkait css sebelum masuk ke penjelasan tersebut.
+          </p>
+          <h3>The CSS Podcast - 002: Selectors by WebDev</h3>
+          <audio controls>
+            <source
+              src="../media/TCP_CSS_Podcast__Episode_002_v2.0_FINAL.mp3"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+          <h3>Referensi</h3>
+          <ul>
+            <li>
+              <a href="https://web.dev/learn/css/selectors/">Selectors</a>
+              <span>By WebDev</span>
+            </li>
+            <li>
+              <a href="https://www.petanikode.com/css-selektor/"
+                >Tutorial CSS: Memahami 6 Jenis Selektor di CSS</a
+              >
+              <span>By WebDev</span>
+            </li>
+          </ul>
+        </section>
       </main>
     </div>
   </body>
