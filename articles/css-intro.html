@@ -8,7 +8,6 @@
     <script src="/scripts/saveToHistory.js" defer></script>
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
-
   <body>
     <div class="container">
       <main>
@@ -20,7 +19,7 @@
             </p>
             <img
               class="img-content"
-              src="../image-content/section-article.jpg"
+              src="../image-content/css-intro.jpg"
               alt=""
             />
           </div>
@@ -51,18 +50,162 @@
           </p>
           <h2>Cara kerja CSS</h2>
           <p>
-            CSS menggunakan bahasa inggris dasar yang berbasi syntax dilengkapi
+            CSS menggunakan bahasa inggris dasar yang berbasis syntax dilengkapi
             dengan beberapa rule yang perlu disesuaikan dengan HTML, karena pada
             dasarnya HTML tidak menerapkan element style, sehingga perlu
             penyesuaian ulang untuk melakukan penyeleksian pada CSS untuk dapat
-            menyeleksi element pada html.
+            menyeleksi element pada html, detail cara kerja css seperi ini:
           </p>
+
+          <ol>
+            <li>
+              <strong>Load HTML</strong>, dalam tahap ini browser memuat HTML.
+            </li>
+            <li>
+              <strong>Parse HTML</strong>, Pada tahap ini terjadi penguraian
+              HTML menjadi Document Object Model (DOM) dan memuat CSS.
+            </li>
+            <li>
+              <strong>Load CSS</strong>, Pada tahap ini browser memuat tautan
+              seperti gambar atau video lalu CSS dimuatkan dan ditautkan.
+            </li>
+            <li>
+              <strong>Parse CSS</strong>, Pada tahap ini terjadi penguraian CSS.
+            </li>
+            <li>
+              <strong>Render Tree</strong>, Penyeleksian tiap CSS yang akan
+              digunakan ke Document Object Model (DOM).
+            </li>
+            <li>
+              <strong>Display</strong>, Setelah semua proses diatas berjalan ,
+              proses terakhir ialah CSS dan DOM akan membentuk tampilan visual
+              sebuah halaman situs yang tertampil di layar monitor.
+            </li>
+          </ol>
+
           <p>
             Umumnya untuk membaca element html biasanya css menggunakan selektor
             yang dapat digunakan, tetapi ada cara untuk memasukkan style css
             pada tag html yaitu dengan cara seperti
           </p>
-          <p></p>
+          <p
+            class="codepen"
+            data-height="300"
+            data-default-tab="html,result"
+            data-slug-hash="VwVRXzj"
+            data-user="hafizhkhalis"
+            style="
+              height: 300px;
+              box-sizing: border-box;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 2px solid;
+              margin: 1em 0;
+              padding: 1em;
+            "
+          >
+            <span
+              >See the Pen
+              <a href="https://codepen.io/hafizhkhalis/pen/VwVRXzj">
+                Inline Style</a
+              >
+              by Hakhajid (<a href="https://codepen.io/hafizhkhalis"
+                >@hafizhkhalis</a
+              >) on <a href="https://codepen.io">CodePen</a>.</span
+            >
+          </p>
+          <script
+            async
+            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+          ></script>
+          <p>
+            Cara diatas disebut sebagai inline style CSS, untuk detailnya
+            berikut pembahasannya.
+          </p>
+          <section>
+            <h2>Jenis - Jenis Pemanggilan Kode CSS</h2>
+            <p>
+              Pada dasarnya kita diberikan pilihan untuk cara memanggil kode css
+              pada html, umumnya ada 3 cara yang dapat digunakan yaitu:
+            </p>
+            <h3>1. Inline CSS</h3>
+            <p>
+              Inline CSS merupakan cara untuk memanggil kode css langsung pada
+              kode html, dengan memberikan atribut style pada tag, lalu diisi
+              dengan value dari property css dibuka dengan (:) ditutup dengan
+              (;) lalu dipisahkan oleh spasi untuk setiap property css yang
+              dibutuhkan. Contohnya:
+            </p>
+            <p
+              class="codepen"
+              data-height="300"
+              data-default-tab="html,result"
+              data-slug-hash="qBQvoVd"
+              data-user="hafizhkhalis"
+              style="
+                height: 300px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid;
+                margin: 1em 0;
+                padding: 1em;
+              "
+            >
+              <span
+                >See the Pen
+                <a href="https://codepen.io/hafizhkhalis/pen/qBQvoVd">
+                  Inline Style 2</a
+                >
+                by Hakhajid (<a href="https://codepen.io/hafizhkhalis"
+                  >@hafizhkhalis</a
+                >) on <a href="https://codepen.io">CodePen</a>.</span
+              >
+            </p>
+            <script
+              async
+              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+            ></script>
+            <h3>2. Internal CSS</h3>
+            <p>
+              Internal CSS merupakan metode menyisipkan kode css pada tag khusus
+              yang diletakkan pada tag head di html seperti contoh berikut:
+            </p>
+            <img
+              src="../image/img-internalcss.png"
+              alt=""
+              style="height: 200px"
+            />
+            <h3>External CSS</h3>
+            <p>
+              External CSS merupakan metode memisahkan file css dengan html,
+              sehingga maintanance kode lebih baik, yang dapat dilakukan adalah
+              dengan membuat file baru dengan format (.css) lalu sisipkan kode
+              berikut untuk memanggil css:
+            </p>
+            <img src="../image/img-linkrel.png" alt="" />
+            <p>
+              href dapat diisi dengan source file, untuk masuk ke folder dapat
+              dengan menggunakan (/) jika file berada di luar folder dapat
+              menelusuri dengan menggunakan (../)
+            </p>
+          </section>
+          <section>
+            <h2>Penutup</h2>
+            <p>
+              Dari artikel ini kita sedikit mengenal terkait konsep dari CSS
+              bekerja dan cara untuk menggunakan CSS yaitu dengan menggunakan
+              inline css, internal css, ataupun dengan external css, dari ketiga
+              cara tersebut sangat tidak dianjurkan menggunakan inline css,
+              alasannya karena inline css merupakan prioritas 2 terbesar pada
+              selektor css, baca
+              <a href="css-selectors.html">CSS SELECTORS</a> untuk penjelasan
+              detail terkait selektor. Sebaiknya untuk menggunakan css dengan
+              external file agar kode lebih mudah di maintanance.
+            </p>
+          </section>
         </section>
       </main>
     </div>

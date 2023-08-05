@@ -71,8 +71,6 @@ body {
 
 .img-content {
   width: 1250px;
-  height: 500px;
-  object-fit: cover;
 }
 
 .footer__container {

@@ -24,4 +24,5 @@
 .article__list img {
   height: 10rem;
   width: auto;
+  border-bottom: 1px solid rgb(4, 72, 132);
 }
