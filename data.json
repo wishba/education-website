@@ -8,7 +8,11 @@
     "image": "section-article.jpg"
   },
   {
-    "pageName": "css-facts",
+    "pageName": "css-intro",
+    "image": "section-article.jpg"
+  },
+  {
+    "pageName": "css-selectors",
     "image": "section-article.jpg"
   },
   {

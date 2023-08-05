@@ -9,7 +9,7 @@
 
 .article__list li {
   list-style: none;
-  width: 15rem;
+  width: 14.2rem;
   border: 0.1rem solid rgb(4, 72, 132);
   text-align: center;
   height: 220px;
@@ -18,6 +18,7 @@
 .article__list a {
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
 
 .article__list img {
