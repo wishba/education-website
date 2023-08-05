@@ -12,12 +12,12 @@ header.classList.add('header');
 header.innerHTML = head;
 container.insertBefore(header, firstElement);
 
-// const footer = document.createElement('footer');
-// const foot = `
-//     <p id="copyright" class="copyright text">
-//       Copyright &copy; 2023 by Educational Website.
-//     </p>
-// `;
-
-// footer.innerHTML = foot;
-// container.insertBefore(footer, firstElement.nextSibling);
+const footer = document.createElement('footer');
+const foot = `
+    <p id="copyright" class="copyright__text">
+      Copyright &copy; 2023 by Educational Website.
+    </p>
+`;
+footer.classList.add('footer__container');
+footer.innerHTML = foot;
+container.insertBefore(footer, firstElement.nextSibling);

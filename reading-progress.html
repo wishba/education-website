@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Website</title>
+    <script src="/scripts/header.js" defer></script>
+    <script src="/scripts/history.js" defer></script>
+    <script src="/scripts/historyCount.js" defer></script>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/readingProgress.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Education Website</title>
-  <script src="/scripts/header.js" defer></script>
-  <script src="/scripts/history.js" defer></script>
-  <script src="/scripts/historyCount.js" defer></script>
-  <link rel="stylesheet" href="/styles/style.css" />
-  <link rel="stylesheet" href="/styles/readingProgress.css">
-</head>
+  <body>
+    <div class="container">
+      <main class="reading__container">
+        <section>
+          <h2>Anda Telah Membaca <span id="historyCount">0</span> Artikel</h2>
+          <p class="history__riwayat">Riwayat Membaca:</p>
+          <ul id="history"></ul>
+        </section>
 
-<body>
-  <div class="container">
-    <main>
-      <section>
-        <h2>Anda Telah Membaca <span id="historyCount">0</span> Artikel</h2>
-        <p class="history__riwayat">Riwayat Membaca:</p>
-        <ul id="history"></ul>
-      </section>
+        <section>
+          <h2>Masukan pengguna</h2>
+          <form
+            class="form__feedback"
+            name="feedback"
+            method="POST"
+            data-netlify="true"
+          >
+            <label>
+              Apakah anda puas dengan artikel-artikel yang telah dibaca?
+              <div>
+                <label>
+                  <input type="radio" name="satisfaction" value="Kurang Puas" />
+                  Kurang Puas
+                </label>
+                <label>
+                  <input type="radio" name="satisfaction" value="Puas" />
+                  Puas
+                </label>
+                <label>
+                  <input type="radio" name="satisfaction" value="Sangat Puas" />
+                  Sangat Puas
+                </label>
+              </div>
+            </label>
 
-      <section>
-        <h2>Masukan pengguna</h2>
-        <form class="form__feedback" name="feedback" method="POST" data-netlify="true">
-          <label>
-            Apakah anda puas dengan artikel-artikel yang telah dibaca?
-            <div>
-              <label>
-                <input type="radio" name="satisfaction" value="Kurang Puas">
-                Kurang Puas
-              </label>
-              <label>
-                <input type="radio" name="satisfaction" value="Puas">
-                Puas
-              </label>
-              <label>
-                <input type="radio" name="satisfaction" value="Sangat Puas">
-                Sangat Puas
-              </label>
-            </div>
-          </label>
+            <label>
+              Ceritakan topik yang ingin anda temukan dalam website kami
+              <textarea name="suggestions"></textarea>
+            </label>
 
-          <label>
-            Ceritakan topik yang ingin anda temukan dalam website kami
-            <textarea name="suggestions"></textarea>
-          </label>
-
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-  </div>
-</body>
-
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
